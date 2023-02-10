@@ -48,7 +48,7 @@ min-height: 55vh;
     background: white;
 padding: 50px 15vw 100px 15vw;
 display: grid;
-grid-template-columns: 60% 40%;
+grid-template-columns: 80% 20%;
 align-items: center;
 justify-content: center;
 }
