@@ -1,0 +1,36 @@
+body{
+    background-color:lightgray;
+}
+
+header{
+    background-color: #b4cded;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    text-align:center;
+    background-color: black;
+    font-weight: bolder
+    display: inline
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+    display: inline;  
+    padding: 10mm;
+   
+}
+
+#images{
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+footer{
+ background-color:#344966;
+ color: rgb(255, 255, 255);
+}

@@ -1,0 +1,140 @@
+add index with top left piece of paper button
+
+add this html skeleton to index.html
+<!--
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   </head>
+   <body>
+   </body>
+</html> 
+
+-->
+
+Add a title tag inside of the head tag, with the display text of “Practice Quiz 1: Your Name.”
+<!-- 
+   
+   <head>
+    <title>Practice Quiz 1: Elias Shack</title>
+   </head>
+
+-->
+
+Add a header tag inside the body tag (dont get the head and the header tag confused).
+Inside the header tag, create an h1 tag that displays the text “Practice Quiz 1: Your Name.”
+<!-- 
+<header>
+   <h1>practice Quiz 1: Elias Shack</h1>
+</header>
+-->
+
+Inside of the nav tag, create three hyperlinks:
+One that links to gallery.html (in the pages folder) with the display text of “Photo Gallery”. Use a relative path.
+One that links to about.html with the display text of “About Us”. Also use a relative path.
+One that links to Instagrams home page, the display text of “Instagram”. Use an absolute path.
+
+in this example Instagram is a absolute path, about and gallery are relative
+<!-- 
+<nav>
+   
+            <a href="pages/gallery.html">Photo Gallery</a>
+            <a href="pages/about.html">About Us</a>
+            <a href="https:instagram.com">Instagram</a>
+   
+</nav>
+-->
+
+Below the nav tag, create a main tag.
+Inside the main tag, create a section that has an id of “images”.
+Inside of the section you just made, create 3 img tags that display the three images in the images folder, using relative paths.
+Dont forget to use the alt attribute to give each image a description (for people who use a screen reader).
+
+<!--
+      <main>
+        <section id="images">
+        <img src="images/landscape1_300x200.jpg" alt ="Mountain Meadow" />
+        <img src="images/landscape2_300x200.jpg" alt ="Golden Beach" />
+        <img src="images/landscape3_300x200.jpg" alt ="Ocean Scene" />
+     </main>
+-->
+
+Create a footer section below your main section using the footer tag. Within the footer, create a paragraph tag that says “Copyright Your Name, 2023.”
+
+<!--
+<footer>
+   <p>“Copyright Your Name, 2023.”</p>
+ </footer>
+-->
+
+stylesheet
+
+add stylesheet with top left piece of paper button 
+link to stylesheet in index.html
+<!--
+
+<link rel="stylesheet" href="style.css">
+
+-->
+(stylesheet)
+make the background light gray
+<!---
+body{
+   background-color:lightgray;
+}
+-->
+
+Create some style rules for the header element (and any relevant child elements) to:
+Set the background color to #b4cded
+Center the text horizontally and vertically.
+Set the font family to Impact.
+
+<!--
+header{
+    background-color: #b4cded;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+-->
+Create some style rules for the nav element (and any relevant child elements) to:
+Center-align the hyperlinks
+Turn the background color to black
+Set the link color to white, no underline, and bold
+<!--
+nav{
+    text-align:center;
+    background-color: black;
+    font-weight: bolder
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+    display: inline;  
+    padding: 10mm;
+       
+}
+-->
+Create some style rules to ensure that the three images are all in a row, evenly spaced, 
+and with the same width. You may use any technique you want to do this, so long as youre 
+using CSS. See the screenshot above.
+
+<!--
+ #images{
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 10px;
+}
+-->
+
+Create some style rules to set the footers background color to #344966, and the footers text color to white.
+<!--
+footer{
+   background-color:#344966;
+   color: rgb(255, 255, 255);
+  }
+-->
+
+
+
