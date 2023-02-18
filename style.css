@@ -1,4 +1,16 @@
 /* You're welcome to change any of this! */
+main{
+    color:darkgreen ;
+    background-color: rgb(39, 248, 53);
+    padding-top: 1in;
+    padding-bottom: 1in;
+
+}
+
+header{
+    color: darkgreen;
+    background-color: rgb(39, 248, 53);
+}
 * {
     box-sizing: border-box;
 }

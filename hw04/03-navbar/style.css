@@ -1,0 +1,31 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav,h1,ul {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 3in;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#home{
+flex-direction: column;
+display:flex;
+justify-content:center; 
+align-items: center;
+padding: 6.2in;
+background-color: rgb(255, 0, 0);
+color:white
+}
+
+#bio{
+    flex-direction: column;
+    display:flex;
+    align-items:center;
+    padding: 6.2in;
+    background-color: rgb(255, 115, 0);
+    color:white
+}
+
+#portfolio{
+    flex-direction: column;
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    padding: 6.2in;
+    background-color: rgb(210, 195, 29);
+    color:white
+}
+
+
+#contact{
+    flex-direction: column;
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    padding: 6.2in;
+    background-color: rgb(29, 135, 210);
+    color:white
+}
+
+

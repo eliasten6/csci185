@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+    width: fit-content;
+    column-gap: 100px;
+    padding-left: 2in;
+
+  }
+
+.card{
+border-style:groove;
+display: grid;
+grid-template-columns: auto 150px;
+padding: 1cm;
+
+}
+
+p{
+    width: 80%;
+}
+
