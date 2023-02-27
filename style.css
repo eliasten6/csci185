@@ -1,15 +1,15 @@
 /* You're welcome to change any of this! */
 main{
-    color:darkgreen ;
-    background-color: rgb(39, 248, 53);
-    padding-top: 1in;
+    color: rgb(64, 202, 64);
+    background-color: rgb(12, 128, 24);
     padding-bottom: 1in;
-
+    
 }
 
 header{
-    color: darkgreen;
-    background-color: rgb(39, 248, 53);
+    color: rgb(64, 202, 64);
+    background-color: rgb(11, 96, 19);
+
 }
 * {
     box-sizing: border-box;
@@ -24,3 +24,33 @@ p, a, li {
     line-height: 1.5em;
     font-size: 1.1em;
 }
+
+main {
+padding-left: 3ch;
+}
+
+header{
+    padding-left: 2ch;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    font-family: 'Itim', cursive;
+}
+
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">);
+
+main{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#purp{
+scale: 130%;
+padding-left: 2.3in;
+}
+
+<style>
+p {
+  background-image: url(Purple-PNG-Background.png);
+}
+</style>
