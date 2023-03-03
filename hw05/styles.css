@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav{
+    display: flex;
+   justify-content: flex-end;
+   padding-right: .5in;
+   
+
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 3in; 
+    list-style-type: none;
+}
+a:any-link { text-decoration: none; 
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+
+}
+
+header{
+    background-color: rgb(88, 164, 88);
+}
+
+div > h1 {
+ display: flex;
+ justify-content: center;
+ padding-bottom: .5in;
+}
+
+#dog-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div > #profile-pic {
+ display: flex; 
+ justify-content: center;  
+ border-radius: 100%;
+}
+
+h1, h2{
+font-family: 'Itim', cursive;
+}
+
+.card{
+display: grid;
+}
+
+.project-holder{
+display: grid;
+grid-template-columns: 1fr 1fr;
+height: 800px;
+width: 1000px;
+padding-left: in;
+background-color: rgb(218, 214, 214);
+}
+
+#projects{
+padding-left: 7in;
+background-color: rgb(218, 214, 214);
+}
+
+#about{
+    padding-left: 1in;
+}
+
+img{
+    height: 250px;
+}
+
+#contact{
+    padding-left: 1in;
+   }
+
+.contact-details{
+justify-content: center;
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding-top: .25in;
+column-gap: 10px;
+}
+
+#name{
+ grid-row: 1 / 2;
+ background-color: rgb(211, 211, 211);
+ height: 40px;
+ width: 300px;
+}
+
+#email{
+    background-color: rgb(211, 211, 211);
+    height: 40px;
+    width: 400px;
+   }
+
+#message {
+background-color: rgb(211, 211, 211);
+width: 705px;
+height: 400px;
+padding-top: .25in;
+}
+
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightgrey;
+    display: flex;
+justify-content: center;
+}
+
+
+@media screen and (max-width: 800px) {
+nav {
+    display: flex;
+   justify-content:center;
+   padding-right: .5in;
+}
+
+.card{
+    display: grid;
+    }
+    
+    .project-holder{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    height: 1600px;
+    width: 400px;
+    background-color: rgb(218, 214, 214);
+    }
+
+    #projects{
+        padding-left: 2in;
+        background-color: rgb(218, 214, 214);
+        }
+
+        #contact{
+            padding-left: .5in;
+           }
+        
+        .contact-details{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: .5in;
+        column-gap: 10px;
+        padding-right: .5in;
+        }
+        
+        #name{
+         grid-row: 1 / 2;
+         background-color: rgb(211, 211, 211);
+         height: 40px;
+         width: 350px;
+        }
+        
+        #email{
+            background-color: rgb(211, 211, 211);
+            height: 40px;
+            width: 350px;
+           }
+        
+        #message {
+        background-color: rgb(211, 211, 211);
+        width: 705px;
+        height: 100px;
+        padding-top: .25in;
+        }
+
+        #contact-info{
+            padding-top:.5in;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+1. What corrections did you have to make?
+
+I had to add names with aria and set a language for my website.
+
+1. Do you think your website is usable if you turn off the CSS? Why or why not?
+
+
+Yes. You can tab to certain pages and they all have names.
+
+
+1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
+
+Yep!
+
+
+Reminder: don't forget to include a screenshot of your Wave report and link to it from your homepage!

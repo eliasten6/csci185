@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin: 100px 0;
+}
+
+#section1 a,
+#section1 a:link {
+    color: blue;
+}
+
+#section1 a:hover,
+#section1 a:focus {
+    text-decoration: none;
+}
+
+#section1 a:active,
+#section1 a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+
+
+/* Section 2 */
+#section2 p:nth-of-type(even) {
+    font-weight: bold;
+    color: teal;
+    transition: all 0.3s ease-out;
+}
+
+#section2 p:first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+
+
+#section3 input {
+    font-size: 1.3em;
+    width: 500px;
+    border-radius: 4px;
+    border: solid 3px transparent;
+    background-color: #F0F0F0;
+    line-height: 2em;
+    margin-bottom: 20px;
+    padding: 4px 15px;
+    transition: all 0.3s ease-out;
+}
+#section3 input:focus {
+    background-color: rgb(176, 242, 226);
+    border: solid 3px rgba(33, 201, 33, 0.147);
+    outline: none;
+    transition: all 1s ease-out;
+    transition: all 1s ease-in;
+}
+
+
+/* Section 4 */
+#section4 .new::before {
+    content: "new";
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 3px 6px;
+    background-color: hotpink;
+    margin-right: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* requires that you include the font-awesome stylesheet */
+#section4 .comment::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f075";
+    margin-right: 5px;
+}
+
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 250px;
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+
+.card button {
+    display: none;
+}
+
+.card:hover button,
+.card:focus button,
+.card:focus-within button {
+    display: inline-block;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 800;
+    color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+a:hover {
+  background-position: 0 100%;
+}
+  
+
