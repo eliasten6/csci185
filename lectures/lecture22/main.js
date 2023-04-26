@@ -1,3 +1,4 @@
+
 // ignore this function for now. We'll go over it
 // on Wednesday: 
 async function fetchCourses() {
@@ -9,10 +10,10 @@ fetchCourses();
 /* Your Tasks:
     1. Output the title of the first course to the console.
     2. Output the name of the course's instructor to the console.
-    3. Output the title of the first course to the #results section.
-    4. Output the title and the instructor of the first course to the #results section.
+    3. Output the title of the first course to the .courses section.
+    4. Output the title and the instructor of the first course to the .courses section.
     5. Output ALL of the course titles to the console.
-    6. Output ALL of the course titles to the #results section.
+    6. Output ALL of the course titles to the .courses section.
     7. Output ALL of the diversity intensive courses to the results section.
     8. Questions to ponder:
         * How could you make this interface 
@@ -27,18 +28,38 @@ fetchCourses();
 function search() {
     console.log(data);
     console.log(data[0].Title);
-    console.log(data[0].instructors[0].name)
-   
-  // document.querySelector('.courses') .innerHTML = data[900].Title + ' - ' + data[900].instructors[900].name;
-   document.querySelector('.courses') .innerHTML = `
-   <section class="course">
-   <h2>CSCI 182.001: ${ data[0].Title } </h2>
-   <p>
-       MWF &bull; ZEI 201 &bull; 3 credit hour(s)
-   </p>
-   <p><strong>${data</strong></p>
-</section>
-   `;
+    console.log(data[0].Instructors[0].Name);
+    
+    // clear out the search results:
+    document.querySelector('.courses').innerHTML = '';
+    // Output the title of the first course to the ".courses" section
+    // of the web page. 
+    // 1. How do you target the ".courses" section?
+    // document.querySelector('.courses').innerHTML = data[900].Title + ' - ' + data[900].Instructors[0].Name;
+    let i = 0;
+    const searchTerm = document.querySelector('#search_term').value;
+    while (i < data.length) {
+        
+        let instructor = 'TBD';
+        if (data[i].Instructors.length > 0) {
+            instructor = data[i].Instructors[0].Name;
+        }
+        if (data[i].Classification.DiversityIntensiver === true)
+        if (instructor.includes(searchTerm)) {
+            // Lines of code that add a new element to the DOM:
+            document.querySelector('.courses').insertAdjacentHTML(
+                'beforeend',
+                `<section class="course">
+                    <h2>${data[i].Code}: ${ data[i].Title }</h2>
+                    <p>
+                        ${ data[i].Days } &bull; ${ data[i].Location.FullLocation } &bull; ${data[i].Hours} credit hour(s)
+                    </p>
+                    <p><strong>${ instructor }</strong></p>
+                </section>`
+            );
+        }
+        i++;
+    }
 
-   //const searchTerm = document.querySelector('#search_term').value;
+    // const searchTerm = document.querySelector('#search_term').value;
 }

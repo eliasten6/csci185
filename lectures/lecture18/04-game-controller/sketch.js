@@ -1,7 +1,7 @@
 let x = 500;
 let y = 200;
 let width = 200;
-let fillColor = 'Teal';
+let fillColor = 'bl;ack';
 
 const canvasWidth = window.innerWidth;
 const canvasHeight = window.innerHeight; 
@@ -41,6 +41,8 @@ function moveController(ev) {
     } else if (ev.code === 'KeyR') {
         fillColor = 'red';
     }
+
+
 
 
     // redraw circle:
